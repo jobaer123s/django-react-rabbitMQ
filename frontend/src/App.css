@@ -1,0 +1,249 @@
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 4rem;
+}
+
+.toast {
+  margin: 1rem auto 0;
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  background: #ffe8e5;
+  color: #b42318;
+  font-weight: 600;
+  width: min(600px, 90%);
+}
+
+.landing {
+  background: #0b1121;
+  color: #f5f6f8;
+  padding: 4rem clamp(1rem, 5vw, 6rem);
+}
+
+.landing__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  align-items: center;
+}
+
+.landing__copy h1 {
+  font-size: clamp(2.5rem, 6vw, 3.8rem);
+  margin-bottom: 1rem;
+}
+
+.landing__visual {
+  border-radius: 28px;
+  min-height: 320px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.landing__overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(11, 17, 33, 0.1), rgba(11, 17, 33, 0.8));
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  color: #c3cad9;
+}
+
+.lead {
+  font-size: 1.1rem;
+  color: #c3cad9;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.order-form {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-end;
+}
+
+.order-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color: #c3cad9;
+}
+
+.order-form input {
+  width: 80px;
+  padding: 0.35rem 0.5rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+button.primary {
+  background: #6d66ff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.75rem;
+  border-radius: 999px;
+  font-size: 1rem;
+}
+
+button.ghost {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 0.75rem 1.75rem;
+  border-radius: 999px;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.status-card {
+  margin-top: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  display: inline-flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.dashboard {
+  padding: 0 clamp(1rem, 5vw, 6rem);
+}
+
+.dashboard__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard__actions button {
+  border-radius: 12px;
+  padding: 0.6rem 1.25rem;
+  border: 1px solid #d0d5dd;
+  background: white;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color: #4f566b;
+}
+
+.filters select,
+.filters input {
+  margin-top: 0.35rem;
+  border-radius: 10px;
+  border: 1px solid #d0d5dd;
+  padding: 0.45rem 0.65rem;
+}
+
+.table-wrapper {
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #f0f2f7;
+}
+
+th {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.badge {
+  padding: 0.2rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.badge--pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badge--processing {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.badge--completed {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+  font-size: 0.85rem;
+}
+
+.empty {
+  text-align: center;
+  color: #6b7280;
+}
+
+@media (max-width: 600px) {
+  .order-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

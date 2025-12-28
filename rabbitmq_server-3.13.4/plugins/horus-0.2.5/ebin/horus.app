@@ -1,0 +1,13 @@
+{application,horus,
+             [{description,"Creates standalone modules from anonymous functions"},
+              {vsn,"0.2.5"},
+              {registered,[]},
+              {applications,[erts,kernel,stdlib,compiler,tools]},
+              {env,[{skip_collection_froms_apps,[]}]},
+              {files,["README.md","LICENSE","mix.exs","rebar.config",
+                      "rebar.lock","src","include","priv"]},
+              {modules, ['horus','horus_cover','horus_utils']},
+              {licenses,["Apache-2.0","MPL-2.0"]},
+              {links,[{"GitHub","https://github.com/rabbitmq/horus"}]},
+              {build_tools,["rebar3","mix"]},
+              {doc,"doc"}]}.

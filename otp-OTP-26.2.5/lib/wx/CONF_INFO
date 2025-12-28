@@ -1,0 +1,11 @@
+No OpenGL headers found, wx will NOT be usable
+No GLU headers found, wx will NOT be usable
+wxWidgets was not compiled with --enable-webview or wxWebView developer package is not installed, wxWebView will NOT be available
+
+        wxWidgets must be installed on your system.
+
+        Please check that wx-config is in path, the directory
+        where wxWidgets libraries are installed (returned by
+        'wx-config --libs' or 'wx-config --static --libs' command)
+        is in LD_LIBRARY_PATH or equivalent variable and
+        wxWidgets version is 3.0.2 or above.
