@@ -10,6 +10,7 @@ Thumbs.db
 
 # ---- Python / Django backend ----
 __pycache__/
+backend/backend/__pycache__/
 *.py[cod]
 *.pyo
 *.pyd
